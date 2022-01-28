@@ -1,0 +1,30 @@
+<div class="block_sing_in">
+  <div class="block_title">
+    <h3>Welcome!</h3>
+    <h2>Join The Community</h2>
+  </div>
+  <form (ngSubmit)="submit()" [formGroup]="form">
+    <div class="block_email">
+      <p class="name_input">E-mail or Username</p>
+      <input type="email" formControlName="email" placeholder="e.g.: elonmusk@mars.com">
+      <span class="material-icons">email</span>
+    </div>
+    <div class="block_password">
+      <p class="name_input">Password</p>
+      <input type="password" formControlName="password" placeholder="e.g.: X Æ A-12">
+      <span class="material-icons">lock</span>
+    </div>
+    <button
+      class="btn_submit"
+      type="submit"
+      [disabled]="form.invalid"
+      [ngClass]="{disable: form.invalid}"
+    >Sing Up
+    </button>
+  </form>
+  <div class="block_login">
+    <p>Already a member?</p>
+    <p>Login here</p>
+    <span class="material-icons">arrow_forward</span>
+  </div>
+</div>

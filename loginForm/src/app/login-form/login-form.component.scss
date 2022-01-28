@@ -1,0 +1,141 @@
+.block_sing_in {
+  width: 404px;
+  height: 464px;
+  margin: 100px auto 0;
+  padding: 48px 40px;
+  border: 2px solid #ececec;
+  border-radius: 16px;
+  font-family: 'Inter', sans-serif;
+
+  .block_title {
+    margin-bottom: 40px;
+
+    :first-child {
+      font-size: 16px;
+      font-weight: 500;
+      color: #98989E;
+    }
+
+    :last-child {
+      font-size: 24px;
+      font-weight: 700;
+      color: #212429;
+    }
+  }
+
+  .name_input {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #212429;
+  }
+
+  input {
+    padding: 14px 0 14px 36px;
+    //margin: 0 0 25px;
+    width: 324px;
+    height: 40px;
+    border: 1px solid #D8D8D8;
+    border-radius: 24px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #3183FF;
+    }
+
+    &.ng-invalid.ng-touched {
+      border: 1px solid #E7414C;
+    }
+
+    &.ng-valid.ng-touched {
+      border: 1px solid #69CD63;
+    }
+  }
+
+  .block_email {
+    position: relative;
+
+    :last-child {
+      position: absolute;
+      left: 14px;
+      bottom: 10px;
+      font-size: 18px;
+      color: #98989E;
+    }
+
+  }
+
+  .block_password {
+    position: relative;
+
+    :first-child {
+      margin: 25px 0 8px;
+    }
+    :last-child {
+      position: absolute;
+      bottom: 11px;
+      left: 13px;
+      font-size: 19px;
+      color: #98989E;
+    }
+  }
+
+  .btn_submit {
+    width: 324px;
+    height: 48px;
+    margin: 40px 0 16px;
+    border-radius: 24px;
+    background:  #3183FF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    position: relative;
+
+    &:hover:enabled {
+      cursor: pointer;
+      background: -webkit-linear-gradient(#FFFFFF, #FFF172, #FFF172);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  #3183FF;
+        border-radius: 24px;
+        z-index: -1;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .block_login {
+    display: flex;
+    font-size: 12px;
+    cursor: pointer;
+
+    :first-child {
+      color: #98989E;
+      margin-right: 8px;
+    }
+    :nth-child(2) {
+      color: #212429;
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    :last-child {
+      font-size: 17px;
+      color: #212429;
+    }
+  }
+}
+
+.disable {
+  opacity: 0.5;
+}
